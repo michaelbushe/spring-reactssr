@@ -1,4 +1,4 @@
-package com.mindfulsoftware.com.spring_web_demo;
+package com.mindfulsoftware.spring_web_demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,14 +23,14 @@ public class NewsController {
     public LinkedHashMap<String, Object> getNews(){
         LinkedHashMap<String, Object> newsMap = new LinkedHashMap<>();
         newsMap.put("status", "OK");
-        NewsModel news1 = new NewsModel("john", "News Article 1", "This is news 1");
-        NewsModel news2 = new NewsModel("jennie", "News Article 2", "This is news 2");
-        NewsModel news3 = new NewsModel("fionna", "News Article 3", "This is news 3");
-        NewsModel news4 = new NewsModel("john", "News Article 4", "This is news 4");
-        NewsModel news5 = new NewsModel("dave", "News Article 5", "This is news 5");
-        NewsModel news6 = new NewsModel("john", "News Article 6", "This is news 6");
-        NewsModel news7 = new NewsModel("jennie", "News Article 7", "This is news 7");
-        List<NewsModel> news =  List.of(news1, news2, news3, news4, news5, news6, news7);
+        com.mindfulsoftware.com.spring_web_demo.NewsModel news1 = new com.mindfulsoftware.com.spring_web_demo.NewsModel("john", "News Article 1", "This is news 1");
+        com.mindfulsoftware.com.spring_web_demo.NewsModel news2 = new com.mindfulsoftware.com.spring_web_demo.NewsModel("jennie", "News Article 2", "This is news 2");
+        com.mindfulsoftware.com.spring_web_demo.NewsModel news3 = new com.mindfulsoftware.com.spring_web_demo.NewsModel("fionna", "News Article 3", "This is news 3");
+        com.mindfulsoftware.com.spring_web_demo.NewsModel news4 = new com.mindfulsoftware.com.spring_web_demo.NewsModel("john", "News Article 4", "This is news 4");
+        com.mindfulsoftware.com.spring_web_demo.NewsModel news5 = new com.mindfulsoftware.com.spring_web_demo.NewsModel("dave", "News Article 5", "This is news 5");
+        com.mindfulsoftware.com.spring_web_demo.NewsModel news6 = new com.mindfulsoftware.com.spring_web_demo.NewsModel("john", "News Article 6", "This is news 6");
+        com.mindfulsoftware.com.spring_web_demo.NewsModel news7 = new com.mindfulsoftware.com.spring_web_demo.NewsModel("jennie", "News Article 7", "This is news 7");
+        List<com.mindfulsoftware.com.spring_web_demo.NewsModel> news =  List.of(news1, news2, news3, news4, news5, news6, news7);
         newsMap.put("total", news.size());
         newsMap.put("articles", news);
         return newsMap;

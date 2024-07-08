@@ -1,4 +1,4 @@
-package com.mindfulsoftware.com.spring_web_demo;
+package com.mindfulsoftware.spring_web_demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
